@@ -1,13 +1,14 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* hr
+# 	* hr_employee_mx
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-04 17:46+0000\n"
-"PO-Revision-Date: 2017-04-04 13:48-0400\n"
+"POT-Creation-Date: 2017-04-04 18:44+0000\n"
+"PO-Revision-Date: 2017-04-04 14:46-0400\n"
 "Last-Translator: Manuel Marquez <buzondemam@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -243,9 +244,10 @@ msgstr "Seudónimos de correos"
 msgid "Email Thread"
 msgstr "Hilo de mensajes"
 
-#. module: hr
+#. modules: hr, hr_employee_mx
 #: model:ir.model,name:hr.model_hr_employee
 #: model:ir.ui.view,arch_db:hr.view_employee_form
+#: model:ir.model,name:hr_employee_mx.model_hr_employee
 msgid "Employee"
 msgstr "Empleado"
 
@@ -393,6 +395,11 @@ msgstr "Gestor de recursos humanos"
 #: model:ir.model.fields,field_description:hr.field_hr_job_id
 msgid "ID"
 msgstr "ID"
+
+#. module: hr_employee_mx
+#: model:ir.model.fields,field_description:hr_employee_mx.field_hr_employee_imss
+msgid "IMSS"
+msgstr "IMSS"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_identification_id
@@ -560,6 +567,13 @@ msgstr "Socios"
 msgid "Messages"
 msgstr "Mensajes"
 
+#. module: hr_employee_mx
+#: code:addons/hr_employee_mx/models/hr.py:11
+#: model:ir.model.fields,help:hr_employee_mx.field_hr_employee_imss
+#, python-format
+msgid "Mexican Social Security Institute"
+msgstr "Instituto Mexicano del Seguro Social"
+
 #. module: hr
 #: model:ir.ui.view,arch_db:hr.hr_department_view_kanban
 msgid "More <i class=\"fa fa-caret-down\"/>"
@@ -642,7 +656,7 @@ msgstr "Departamento padre"
 #. module: hr
 #: model:ir.model,name:hr.model_res_partner
 msgid "Partner"
-msgstr "Empresa"
+msgstr "Empresa Asociada"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee_passport_id
