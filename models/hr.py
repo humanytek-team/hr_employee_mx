@@ -5,7 +5,7 @@ from odoo import _
 
 
 class Employee(models.Model):
-    #_name = "hr.employee"
     _inherit = "hr.employee"
 
     imss = fields.Char("IMSS", help=_("Mexican Social Security Institute"))
+    rfc = fields.Char("RFC", help=_("Federal Taxpayer Registration"))

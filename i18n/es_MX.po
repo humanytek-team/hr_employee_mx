@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-04 18:44+0000\n"
-"PO-Revision-Date: 2017-04-04 14:46-0400\n"
+"POT-Creation-Date: 2017-04-04 20:54+0000\n"
+"PO-Revision-Date: 2017-04-04 16:56-0400\n"
 "Last-Translator: Manuel Marquez <buzondemam@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -332,6 +332,13 @@ msgstr ""
 msgid "Experienced Developer"
 msgstr "Desarrollador experimentado"
 
+#. module: hr_employee_mx
+#: code:addons/hr_employee_mx/models/hr.py:11
+#: model:ir.model.fields,help:hr_employee_mx.field_hr_employee_rfc
+#, python-format
+msgid "Federal Taxpayer Registration"
+msgstr "Registro Federal de Contribuyentes"
+
 #. module: hr
 #: selection:hr.employee,gender:0
 msgid "Female"
@@ -568,7 +575,7 @@ msgid "Messages"
 msgstr "Mensajes"
 
 #. module: hr_employee_mx
-#: code:addons/hr_employee_mx/models/hr.py:11
+#: code:addons/hr_employee_mx/models/hr.py:10
 #: model:ir.model.fields,help:hr_employee_mx.field_hr_employee_imss
 #, python-format
 msgid "Mexican Social Security Institute"
@@ -682,6 +689,11 @@ msgstr "Cargo"
 #: model:ir.ui.view,arch_db:hr.view_employee_form
 msgid "Public Information"
 msgstr "Información pública"
+
+#. module: hr_employee_mx
+#: model:ir.model.fields,field_description:hr_employee_mx.field_hr_employee_rfc
+msgid "RFC"
+msgstr "RFC"
 
 #. module: hr
 #: selection:hr.job,state:0
